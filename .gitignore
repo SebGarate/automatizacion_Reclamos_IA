@@ -1,0 +1,29 @@
+# Variables de entorno y secretos
+.env
+.env.local
+*.env
+
+# Entornos virtuales de Python
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Archivos compilados y caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Archivos temporales e IDEs
+.vscode/
+.idea/
+*.swp
+*.tmp
+
+# Logs
+*.log
+
+# Archivos temporales de Power BI
+*.pbix.auto
