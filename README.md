@@ -1,4 +1,4 @@
-# 📊 Intelligent Claims Categorization & Incident Management System
+# Intelligent Claims Categorization & Incident Management System
 
 Sistema end-to-end para la captura, análisis con Inteligencia Artificial, almacenamiento y visualización ejecutiva de reclamos de clientes. Cada reclamo ingresado es analizado automáticamente por Gemini AI, que determina su categoría, sentimiento del cliente, nivel de urgencia y genera un resumen ejecutivo, antes de persistirlo en PostgreSQL.
 
@@ -68,14 +68,17 @@ Vistas optimizadas mediante funciones de ventana y CTEs para análisis avanzado 
 ---
 
 ## Estructura del Repositorio
+
+```
 ├── assets/                  # Capturas de pantalla del Dashboard y Power Apps
 ├── sql/
 │   ├── esquema_tabla.sql    # DDL de la base de datos
 │   └── vistas_window.sql    # Vistas analíticas con Window Functions
-├── processor.py             # Lógica de enriquecimiento y clasificación del texto
-├── poblar_bd.py             # Script de ingesta y conexión a PostgreSQL
-├── main.py                  # Orquestador principal del pipeline
+├── main.py                  # API REST en FastAPI para la ingesta y análisis de reclamos
+├── processor.py             # Módulo de análisis con Gemini AI y persistencia en PostgreSQL
+├── poblar_bd.py             # Script de generación masiva de datos históricos simulados
 ├── Claims_Dashboard.pbix    # Reporte interactivo de Power BI
-├── .gitignore               # Exclusión de archivos sensibles
-├── requirements.txt         # Dependencias del proyecto
-└── README.md                # Documentación principal
+├── .gitignore                # Exclusión de archivos sensibles
+├── requirements.txt          # Dependencias del proyecto
+└── README.md                  # Documentación principal
+```
